@@ -10,7 +10,7 @@ public class LinearSearch {
         for (int i = 0; i < arr.length; i++) {
             steps++;
             if (arr[i] == target) {
-                System.out.println("Number of steps taken: " + steps);
+                System.out.println("Number of steps taken by linear: " + steps);
                 return i;
             }
 
