@@ -3,12 +3,10 @@ package org.example.sorting;
 public class BubbleSort {
 
     public static void sort(int[] arr) {
-//        int temp = 0;
         for (int i = 0; i < arr.length; i++) {
-            for (int j = i + 1; j < arr.length; j++) {
-                if (arr[i] > arr[j]) {
-                    swap(arr, i, j);
-                }
+            for (int j = 0; j < arr.length-1; j++) {
+                if (arr[j] > arr[j+1])
+                    swap(arr, j, j+1);
             }
         }
 
