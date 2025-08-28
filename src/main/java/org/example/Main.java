@@ -12,7 +12,7 @@ public class Main {
 
         BubbleSort.sort(nums);
         for (int num : nums) {
-            System.out.println(num);
+            System.out.print(num + " ");
         }
 
     }
