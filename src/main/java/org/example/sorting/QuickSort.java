@@ -11,7 +11,6 @@ public class QuickSort {
     }
 
     private static int partition(int[] arr, int l, int h) {
-
         int pi = arr[h];
         int i = l - 1;
         for (int j = l; j < h; j++) {
