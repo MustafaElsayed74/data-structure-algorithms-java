@@ -1,4 +1,4 @@
-package org.example.search;
+package org.example.Algorithms.search;
 
 import java.util.Arrays;
 

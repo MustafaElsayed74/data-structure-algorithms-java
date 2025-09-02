@@ -1,4 +1,4 @@
-package org.example.sorting;
+package org.example.Algorithms.sorting;
 
 public class MergeSort {
     public static void sort(int[] arr, int l, int r) {

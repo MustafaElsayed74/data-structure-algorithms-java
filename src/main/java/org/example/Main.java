@@ -1,10 +1,6 @@
 package org.example;
 
-import org.example.search.BinarySearch;
-import org.example.search.LinearSearch;
-import org.example.sorting.*;
-
-import java.util.Arrays;
+import org.example.Algorithms.sorting.MergeSort;
 
 public class Main {
 

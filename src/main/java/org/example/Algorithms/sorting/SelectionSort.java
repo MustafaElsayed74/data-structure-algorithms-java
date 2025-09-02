@@ -1,4 +1,4 @@
-package org.example.sorting;
+package org.example.Algorithms.sorting;
 
 public class SelectionSort {
     public static void sort(int[] arr) {
