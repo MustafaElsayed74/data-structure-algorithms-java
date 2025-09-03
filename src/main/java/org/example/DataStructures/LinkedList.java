@@ -26,4 +26,15 @@ public class LinkedList {
             node = node.next;
         }
     }
+
+    public void insertAtStart(int value){
+
+        Node node  = new Node();
+
+        node.value = value;
+        // Making the next to refer to the last head
+        node.next = head;
+        //Making the head to refer to the new node we created
+        head = node;
+    }
 }
