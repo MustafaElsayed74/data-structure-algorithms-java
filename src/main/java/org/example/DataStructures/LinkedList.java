@@ -57,6 +57,22 @@ public class LinkedList {
             n.next = node;
         }
 
+    }
+
+    public void deleteAt(int index) {
+        Node n = head;
+        if(index == 0 ){
+            head = n.next;
+        }
+        else{
+            for(int i=0; i<index-1;i++){
+                n = n.next;
+            }
+                n.next = n.next.next;
+        }
+
+
+
 
     }
 }
