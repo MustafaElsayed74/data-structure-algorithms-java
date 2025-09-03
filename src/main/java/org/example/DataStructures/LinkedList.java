@@ -46,12 +46,17 @@ public class LinkedList {
         Node n = head;
         int counter = 0;
 
-        for (int i = 0; i < index - 1; i++) {
-            n = n.next;
+        if (index == 0)
+            insertAtStart(value);
+        else {
+            for (int i = 0; i < index - 1; i++) {
+                n = n.next;
+            }
+
+            node.next = n.next;
+            n.next = node;
         }
 
-        node.next = n.next;
-        n.next = node;
 
     }
 }
