@@ -27,14 +27,31 @@ public class LinkedList {
         }
     }
 
-    public void insertAtStart(int value){
+    public void insertAtStart(int value) {
 
-        Node node  = new Node();
+        Node node = new Node();
 
         node.value = value;
         // Making the next to refer to the last head
         node.next = head;
-        //Making the head to refer to the new node we created
+        // Making the head to refer to the new node we created
         head = node;
+    }
+
+    public void insertAt(int index, int value) {
+
+        Node node = new Node();
+
+        node.value = value;
+        Node n = head;
+        int counter = 0;
+
+        for (int i = 0; i < index - 1; i++) {
+            n = n.next;
+        }
+
+        node.next = n.next;
+        n.next = node;
+
     }
 }
