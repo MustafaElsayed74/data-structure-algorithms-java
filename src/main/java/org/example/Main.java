@@ -1,19 +1,22 @@
 package org.example;
 
 import org.example.Algorithms.sorting.MergeSort;
+import org.example.DataStructures.LinkedList;
 
 public class Main {
 
 
     public static void main(String[] args) {
 
+        LinkedList list = new LinkedList();
 
-        int[] nums = {4, 1, 2, 8, 11, 9};
+        list.insert(5);
+        list.insert(12);
+        list.insert(6);
+        list.insert(9);
+        list.insert(8);
 
-        MergeSort.sort(nums, 0, nums.length - 1);
-        for (int num : nums) {
-            System.out.print(num + " ");
-        }
+        list.show();
 
     }
 }
