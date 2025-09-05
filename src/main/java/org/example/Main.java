@@ -1,25 +1,30 @@
 package org.example;
 
-import org.example.Algorithms.sorting.MergeSort;
-import org.example.DataStructures.LinkedList;
+import org.example.DataStructures.LinkedList.LinkedList;
+import org.example.DataStructures.Stack;
 
 public class Main {
 
 
     public static void main(String[] args) {
 
-        LinkedList list = new LinkedList();
+        Stack stack = new Stack();
+        stack.push(2);
+        stack.push(4);
+        stack.push(1);
+        stack.push(8);
+        stack.push(5);
+        //stack.push(7);
+        stack.show();
+        System.out.println();
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
+//        System.out.println(stack.pop());
+        stack.show();
 
-        list.insert(5);
-        list.insert(12);
-        list.insert(6);
-        list.insert(9);
-        list.insert(8);
-//        list.insertAtStart(7);
-//        list.insertAt(0, 18);
-        list.deleteAt(2);
-
-        list.show();
 
     }
 }
