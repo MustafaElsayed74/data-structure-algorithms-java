@@ -16,12 +16,25 @@ public class Stack {
     public void show() {
         for (int i : stack)
             System.out.print(i + " ");
+        System.out.println();
     }
 
     public int pop() {
-     int value  =  stack[--top];
-        stack[top] =0;
+        int value = stack[--top];
+        stack[top] = 0;
         return value;
     }
 
+    public int peek() {
+        return stack[--top];
+    }
+
+    public int size() {
+        return top;
+
+    }
+
+    public boolean isEmpty() {
+        return top <= 0;
+    }
 }
