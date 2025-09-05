@@ -5,11 +5,11 @@ public class Stack {
     int top = 0;
 
     public void push(int value) {
-        try {
-            stack[top] = value;
-            top++;
-        } catch (Exception ex) {
-            System.out.println(ex.getMessage());
+        if (top >= stack.length)
+        System.out.println("Stack is full");
+        else{
+           stack[top] = value;
+           top++;
         }
     }
 
@@ -20,6 +20,8 @@ public class Stack {
     }
 
     public int pop() {
+        if (isEmpty())
+            System.out.println("Stack is empty");
         int value = stack[--top];
         stack[top] = 0;
         return value;
