@@ -2,14 +2,14 @@ package org.example.DataStructures;
 
 public class DynamicStack {
     int capacity = 2;
-    int stack[] = new int[capacity];
+    int[] stack = new int[capacity];
     int top = 0;
 
-    public void push(int value) {
+    public void push(int item) {
         if (size() >= stack.length)
             expand();
         else {
-            stack[top] = value;
+            stack[top] = item;
             top++;
         }
     }
